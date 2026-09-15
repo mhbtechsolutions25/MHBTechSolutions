@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Details | MHB Tech Solutions</title>
+  <title>Services & Solutions | MHB Tech Solutions</title>
 
-  <meta name="description" content="Detailed overview of software development, web development, data analytics, and business products offered by MHB Tech Solutions.">
-  <meta name="keywords" content="software development services, web development details, data engineering, gym management features, inventory software details">
+  <meta name="description" content="Custom software engineering, full-stack website development, data analytics, and cloud server infrastructure management by MHB Tech Solutions.">
+  <meta name="keywords" content="custom software development, website development Aurangabad, data analytics services, server infrastructure, cloud hosting">
   <meta name="author" content="MHB Tech Solutions">
 
-  
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <script async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3568278140104674"
@@ -21,8 +20,8 @@
     body { font-family: 'Inter', sans-serif; background: #f8f9fa; }
     .navbar-brand img { height: 45px; }
     .hero {
-      height: 55vh;
-      background: url("/assets/images/services-bg.png") center/cover no-repeat;
+      height: 48vh;
+      background: url("/assets/images/about-bg.png") center/cover no-repeat;
       position: relative;
       display: flex;
       align-items: center;
@@ -30,16 +29,50 @@
       color: white;
       text-align: center;
     }
-    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.65); }
     .hero-content { position: relative; z-index: 2; }
-    footer { background: #121212; padding: 25px 0; color: #ccc; }
-    .service-box {
+    .section-title { font-weight: 700; margin-bottom: 15px; }
+    .service-card {
       background: white;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 10px;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 30px;
+      height: 100%;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
     }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+      border-color: #0d6efd;
+    }
+    .service-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 12px;
+      background-color: #e7f1ff;
+      color: #0d6efd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+    .step-card {
+      border: 1px dashed #d0d5dd;
+      border-radius: 10px;
+      background: white;
+      padding: 24px;
+      position: relative;
+    }
+    .step-number {
+      font-weight: 800;
+      color: #0d6efd;
+      font-size: 1.8rem;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    footer { background: #121212; padding: 25px 0; color: #ccc; }
   </style>
 </head>
 
@@ -51,16 +84,15 @@
       <img src="/assets/images/logo.png" alt="MHB Tech Solutions Logo">
       <span class="fw-bold text-white fs-5">MHB Tech Solutions</span>
     </a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fw-semibold">
         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/services/">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/products/">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="/careers/">Careers</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
       </ul>
@@ -69,104 +101,141 @@
 </nav>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1 class="fw-bold display-5">Our Services & Products</h1>
-    <p class="lead">Technology solutions designed to scale your business</p>
+  <div class="hero-content px-3">
+    <h1 class="fw-bold display-5">Services & Engineering</h1>
+    <p class="lead mb-0">End-to-end technical engineering built for scale, reliability, and business growth</p>
   </div>
 </section>
 
-<div class="container py-5">
-
-  <div class="service-box">
-    <h3 class="fw-bold text-primary">Software Development</h3>
-    <p>
-      We build custom software solutions that solve real business problems and
-      streamline operations. Our applications are secure, scalable, and tailored
-      specifically to your requirements.
+<!-- Core Services Grid -->
+<section class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title">What We Deliver</h2>
+    <p class="text-muted mx-auto" style="max-width: 650px;">
+      Whether you need automated internal software, high-speed customer-facing web apps, or backend data analytics, we build resilient solutions tailored to your operational models.
     </p>
-    <ul>
-      <li>Custom Desktop & Web Applications</li>
-      <li>Business Process Automation</li>
-      <li>Role-based Access & Security</li>
-      <li>Offline & Online Systems</li>
-      <li>Post-deployment Support & Maintenance</li>
-    </ul>
   </div>
 
-  <div class="service-box">
-    <h3 class="fw-bold text-primary">Website Development</h3>
-    <p>
-      We design and develop professional websites that represent your brand,
-      attract customers, and drive conversions.
-    </p>
-    <ul>
-      <li>Business & Corporate Websites</li>
-      <li>Admin Panels & Dashboards</li>
-      <li>Mobile-Responsive Design</li>
-      <li>SEO & Performance Optimization</li>
-      <li>Secure Hosting Guidance</li>
-    </ul>
+  <div class="row g-4">
+    <!-- Service 1 -->
+    <div class="col-lg-6">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-laptop"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Custom Software Engineering</h4>
+        <p class="text-muted">We build dedicated desktop, client-server, and internal management tools tailored to eliminate operational bottlenecks.</p>
+        <ul class="list-unstyled text-secondary small mb-0">
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Offline-first architectures with robust local data storage</li>
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Multi-terminal synchronization and automated cloud backups</li>
+          <li><i class="bi bi-chevron-right text-primary me-1"></i> Role-based access control and member privacy protection</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="col-lg-6">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-globe"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Web Application & Portal Development</h4>
+        <p class="text-muted">Modern, responsive websites and database-driven web platforms engineered for maximum performance, clean SEO, and usability.</p>
+        <ul class="list-unstyled text-secondary small mb-0">
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> High-speed landing pages and creator/community portals</li>
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Full-stack Python, Flask, and modern front-end architectures</li>
+          <li><i class="bi bi-chevron-right text-primary me-1"></i> Secure database integration with SQLite and PostgreSQL</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="col-lg-6">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Data & Business Analytics</h4>
+        <p class="text-muted">Transform raw operational data into clear, actionable business intelligence and revenue-driving insights.</p>
+        <ul class="list-unstyled text-secondary small mb-0">
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Automated daily, weekly, and monthly sales performance reports</li>
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Inventory turnover diagnostics and demand forecasting</li>
+          <li><i class="bi bi-chevron-right text-primary me-1"></i> Custom KPI reporting dashboards for management clarity</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="col-lg-6">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-hdd-network"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Server & Cloud Infrastructure Management</h4>
+        <p class="text-muted">Reliable server deployment, reverse proxy setup, network security, and public or private multiplayer/community server hosting.</p>
+        <ul class="list-unstyled text-secondary small mb-0">
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Nginx, Gunicorn, and Linux VPS system administration</li>
+          <li class="mb-1"><i class="bi bi-chevron-right text-primary me-1"></i> Dedicated high-tick-rate game & community server configuration</li>
+          <li><i class="bi bi-chevron-right text-primary me-1"></i> Anti-DDoS, SSL implementation, and continuous uptime monitoring</li>
+        </ul>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="service-box">
-    <h3 class="fw-bold text-primary">Data Solutions (Analytics & Engineering)</h3>
-    <p>
-      We help organizations unlock the power of their data through structured
-      analytics and robust data engineering pipelines.
-    </p>
-    <ul>
-      <li>Data Analytics & Reporting</li>
-      <li>Dashboard Development</li>
-      <li>ETL / ELT Pipelines</li>
-      <li>Cloud & On-Prem Data Processing</li>
-      <li>Data Cleaning & Automation</li>
-    </ul>
+<!-- How We Work / Process -->
+<section class="bg-white py-5 border-top border-bottom">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Development Lifecycle</h2>
+      <p class="text-muted">A clear, disciplined process ensuring your software is delivered on time and within scope</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="step-card h-100">
+          <div class="step-number">01</div>
+          <h5 class="fw-bold">Consultation</h5>
+          <p class="text-muted small mb-0">We analyze your daily operations, software pain points, and core business goals.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="step-card h-100">
+          <div class="step-number">02</div>
+          <h5 class="fw-bold">Architecture</h5>
+          <p class="text-muted small mb-0">Database schema creation, UI wireframing, and performance benchmarking.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="step-card h-100">
+          <div class="step-number">03</div>
+          <h5 class="fw-bold">Engineering</h5>
+          <p class="text-muted small mb-0">Clean code execution, feature integration, security testing, and speed optimization.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="step-card h-100">
+          <div class="step-number">04</div>
+          <h5 class="fw-bold">Deployment & Support</h5>
+          <p class="text-muted small mb-0">Seamless workstation setup, cloud launch, and continued maintenance support.</p>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-    <!-- PRODUCTS -->
-    <div class="service-box">
-      <h3 class="fw-bold text-success">Our Software Products</h3>
-
-      <h5 class="fw-bold mt-3">MY GYM – Gym Management Software</h5>
-      <p>
-        MY GYM is an all-in-one gym management solution designed for small and
-        medium fitness centers.
+<!-- CTA Section -->
+<section class="container py-5 text-center">
+  <div class="card bg-dark text-white p-5 border-0 rounded-4 shadow">
+    <div class="card-body">
+      <h2 class="fw-bold mb-3">Ready to modernize your operations?</h2>
+      <p class="text-secondary mx-auto mb-4" style="max-width: 600px;">
+        Share your project specifications or business requirements with us and let's build the right solution.
       </p>
-      <ul>
-        <li>Member & Staff Management</li>
-        <li>Payment Tracking & Due Reminders</li>
-        <li>Diet Management (Ultra & Pro)</li>
-        <li>Offline & Secure System</li>
-        <li>Simple & User-Friendly Interface</li>
-      </ul>
-      <a href="/My_Gym_Download/" class="btn btn-primary mt-3">
-    Download My Gym
-  </a>
-
-     <h5 class="fw-bold mt-4">Invento – Inventory & Billing Software</h5><p>
-    Invento helps businesses manage inventory, billing, and finances efficiently
-    with accurate tracking and reporting.
-  </p>
-
-  <ul>
-    <li>Inventory Stock Management</li>
-    <li>Billing & Invoice Generation</li>
-    <li>Customer & Supplier Records</li>
-    <li>Financial Tracking</li>
-    <li>Offline Business-Ready System</li>
-  </ul>
-
-  <a href="/Invento_Download/" class="btn btn-primary mt-3">
-    Download Invento
-  </a>
-
-  </div> <!-- END service-box -->
-
-  <div class="text-center mt-5">
-    <h4 class="fw-bold mb-3">Have a project in mind?</h4>
-    <a href="/contact/" class="btn btn-primary btn-lg px-5">Contact Us</a>
+      <a href="/contact/" class="btn btn-primary btn-lg px-4 fw-semibold">Start a Project Consultation</a>
+    </div>
   </div>
-</div>
+</section>
 
 <footer class="text-center">
   <div class="container">
@@ -183,5 +252,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
