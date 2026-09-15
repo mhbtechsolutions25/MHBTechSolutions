@@ -3,26 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | MHB Tech Solutions</title>
 
-  <meta name="description" content="MHB Tech Solutions provides software development, website development, data analytics, and business analytics solutions in India.">
-  <meta name="keywords" content="software development company, website development, data analytics services, gym management software">
+  <!-- Primary SEO Meta Tags -->
+  <title>About MHB Tech Solutions | Enterprise IT & Software Company</title>
+  <meta name="title" content="About MHB Tech Solutions | Enterprise IT & Software Company">
+  <meta name="description" content="Learn about MHB Tech Solutions, an IT and software engineering firm based in Aurangabad, Maharashtra. Creators of INVENTO, MY GYM, and My Voice.">
+  <meta name="keywords" content="about MHB Tech Solutions, software development company Aurangabad, IT company Maharashtra, INVENTO inventory software, MY GYM software, My Voice software">
   <meta name="author" content="MHB Tech Solutions">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://mhbtechsolutions.in/about/">
 
-  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mhbtechsolutions.in/about/">
+  <meta property="og:title" content="About MHB Tech Solutions | Enterprise IT & Software Company">
+  <meta property="og:description" content="Bridging the gap between complex software architecture and the practical needs of modern enterprises.">
+  <meta property="og:image" content="https://mhbtechsolutions.in/assets/images/logo.png">
+  <meta property="og:site_name" content="MHB Tech Solutions">
 
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mhbtechsolutions.in/about/">
+  <meta name="twitter:title" content="About MHB Tech Solutions | Enterprise IT & Software Company">
+  <meta name="twitter:description" content="Custom software engineering, business automation, and proprietary solutions built in Aurangabad, India.">
+  <meta name="twitter:image" content="https://mhbtechsolutions.in/assets/images/logo.png">
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "MHB Tech Solutions",
+      "url": "https://mhbtechsolutions.in/",
+      "logo": "https://mhbtechsolutions.in/assets/images/logo.png",
+      "description": "IT and software development company based in Aurangabad, Maharashtra, specializing in custom desktop software, web applications, and business utilities.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Aurangabad",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "telephone": "+919270464983",
+      "email": "mhbtechsolutions25@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/company/mhb-tech-solutions/",
+        "https://www.instagram.com/mhb_tech_solutions"
+      ]
+    }
+  }
+  </script>
+
+  <!-- Bootstrap & Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <script async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3568278140104674"
   crossorigin="anonymous"></script>
 
   <style>
-    body { font-family: 'Inter', sans-serif; background: #f8f9fa; }
+    body { font-family: 'Inter', sans-serif; background: #f8f9fa; color: #333; }
     .navbar-brand img { height: 45px; }
     .hero {
-      height: 55vh;
+      height: 52vh;
       background: url("/assets/images/about-bg.png") center/cover no-repeat;
       position: relative;
       display: flex;
@@ -31,32 +78,77 @@
       color: white;
       text-align: center;
     }
-    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.55); }
+    .hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.65); }
     .hero-content { position: relative; z-index: 2; }
     .section-title { font-weight: 700; margin-bottom: 20px; }
-    .policy-content { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .policy-content h4 { font-weight: 700; margin-top: 25px; color: #0d6efd; }
+    .value-card {
+      background: #ffffff;
+      border: 1px solid #e9ecef;
+      border-radius: 10px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .value-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .product-box {
+      background: white;
+      border-radius: 12px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.09);
+      border-color: #0d6efd;
+    }
+    .product-badge {
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 0.35rem 0.65rem;
+      border-radius: 50rem;
+    }
+    .policy-content {
+      background: white;
+      padding: 45px;
+      border-radius: 12px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+    .policy-content h3 {
+      font-weight: 700;
+      margin-top: 28px;
+      color: #0d6efd;
+      font-size: 1.25rem;
+    }
     footer { background: #121212; padding: 25px 0; color: #ccc; }
   </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top" aria-label="Main Navigation">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="/">
       <img src="/assets/images/logo.png" alt="MHB Tech Solutions Logo">
       <span class="fw-bold text-white fs-5">MHB Tech Solutions</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto fw-semibold">
         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/about/">About</a></li>
         <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/products/">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="/products/">Products</a></li>
         <li class="nav-item"><a class="nav-link" href="/careers/">Careers</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
       </ul>
@@ -64,113 +156,158 @@
   </div>
 </nav>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="fw-bold display-5">About MHB Tech Solutions</h1>
-    <p class="lead">Building practical technology for growing businesses across India</p>
-  </div>
-</section>
-<!------------------------------- Brief Intro ------------------------------------------------------------------------>
-<section class="container py-5">
-  <div class="row align-items-center">
-    <div class="col-lg-12">
-      <h2 class="section-title">Empowering Businesses Through Innovation</h2>
-      <p class="text-muted lead">
-        Based in Aurangabad, Maharashtra, MHB Tech Solutions was founded with a clear vision: to bridge the gap between complex enterprise technology and the practical needs of small to medium-sized businesses. We understand that in today's digital age, efficiency is the key to survival.
-      </p>
-      <p class="text-muted">
-        Our team specializes in developing robust software architecture that doesn't just look good, but solves real-world operational bottlenecks. From custom management systems to high-performance web applications, we focus on scalability, security, and user experience. We pride ourselves on transparent communication and providing long-term value to our partners across the country.
-      </p>
+<main>
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <div class="hero-content container px-3">
+      <h1 class="fw-bold display-5">About MHB Tech Solutions</h1>
+      <p class="lead mb-0">Engineering robust software architectures and mission-critical business utilities</p>
     </div>
-  </div>
+  </header>
 
-  <div class="row g-4 mt-4">
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm border-0 bg-white">
-        <div class="card-body p-4">
-          <h5 class="fw-bold text-primary">Our Mission</h5>
-          <p class="text-muted">To help businesses simplify complex operations, eliminate manual errors, and scale effectively using affordable, high-end technology solutions.</p>
+  <!-- COMPANY OVERVIEW -->
+  <section class="container py-5" aria-labelledby="overview-heading">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <h2 id="overview-heading" class="section-title">Empowering Businesses Through Purpose-Built Software</h2>
+        <p class="text-muted lead">
+          Headquartered in Aurangabad, Maharashtra, MHB Tech Solutions engineers reliable, high-performance technology designed to eliminate operational friction for growing enterprises across India.
+        </p>
+        <p class="text-muted">
+          We focus on core system stability, data security, and offline-first accessibility. Rather than pushing bloated off-the-shelf subscriptions, our engineering team architects custom management software, enterprise web applications, and specialized utility suites that run efficiently under real-world conditions.
+        </p>
+      </div>
+    </div>
+
+    <!-- MISSION / VISION / VALUES -->
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="value-card h-100 p-4 shadow-sm">
+          <h3 class="fw-bold text-primary fs-5 mb-2"><i class="bi bi-bullseye me-2"></i>Our Mission</h3>
+          <p class="text-muted mb-0">To eliminate manual workflow bottlenecks and data errors by building practical, high-throughput software suites tailored to retail, fitness, and service enterprises.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card h-100 p-4 shadow-sm">
+          <h3 class="fw-bold text-primary fs-5 mb-2"><i class="bi bi-eye me-2"></i>Our Vision</h3>
+          <p class="text-muted mb-0">To establish a dependable software engineering ecosystem recognized across India for reliable offline architectures, high-performance web systems, and dedicated support.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="value-card h-100 p-4 shadow-sm">
+          <h3 class="fw-bold text-primary fs-5 mb-2"><i class="bi bi-shield-check me-2"></i>Our Core Values</h3>
+          <p class="text-muted mb-0">Uncompromising code integrity, complete operational transparency, zero unnecessary bloat, and a strict commitment to client data confidentiality.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm border-0 bg-white">
-        <div class="card-body p-4">
-          <h5 class="fw-bold text-primary">Our Vision</h5>
-          <p class="text-muted">To become India's most trusted digital transformation partner for startups and local businesses by 2030.</p>
-        </div>
+  </section>
+
+  <!-- PROPRIETARY PRODUCTS SHOWCASE -->
+  <section class="bg-light py-5 border-top border-bottom" aria-labelledby="products-heading">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 id="products-heading" class="section-title">Our Proprietary Solutions</h2>
+        <p class="text-muted mx-auto" style="max-width: 620px;">
+          Tested desktop and utility platforms deployed to solve specific industry-scale operations.
+        </p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm border-0 bg-white">
-        <div class="card-body p-4">
-          <h5 class="fw-bold text-primary">Our Core Values</h5>
-          <p class="text-muted">Integrity in every line of code, transparency in pricing, and a commitment to our clients' long-term success.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!------------------------------- Products ------------------------------------------------------------------------>
-<section class="bg-light py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Our Solutions</h2>
-      <p class="text-muted">Proprietary products designed for specific industry needs</p>
-    </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-md-5">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4">
-            <h5 class="fw-bold">MY GYM Management</h5>
-            <p class="text-muted">A comprehensive platform for fitness centers to track memberships, attendance, and payments with ease. Designed for the Indian fitness market.</p>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Invento -->
+        <article class="col-lg-4 col-md-6">
+          <div class="product-box p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="product-badge bg-primary-subtle text-primary border border-primary-subtle">Retail & Billing</span>
+              <span class="text-muted small fw-semibold">Desktop Suite</span>
+            </div>
+            <h3 class="fw-bold fs-4 mb-2">INVENTO</h3>
+            <p class="text-muted small flex-grow-1">
+              Our flagship offline-first inventory and GST billing application built for retail establishments. Features automated reorder notifications, item barcode scanning, stock reconciliation, and offline transaction safety.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <a href="/Invento_Download/" class="btn btn-outline-primary btn-sm w-100 fw-semibold">Explore INVENTO</a>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-5">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-body p-4">
-            <h5 class="fw-bold">INVENTO Inventory</h5>
-            <p class="text-muted">Our flagship inventory system for retail shops, ensuring real-time stock tracking and automated reordering alerts to prevent business downtime.</p>
+        </article>
+
+        <!-- My Gym -->
+        <article class="col-lg-4 col-md-6">
+          <div class="product-box p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="product-badge bg-success-subtle text-success border border-success-subtle">Fitness Tech</span>
+              <span class="text-muted small fw-semibold">Desktop / Multi-Sync</span>
+            </div>
+            <h3 class="fw-bold fs-4 mb-2">MY GYM</h3>
+            <p class="text-muted small flex-grow-1">
+              A comprehensive gym and fitness center management platform. Streamlines membership renewal cycles, attendance logging, customized diet distribution, payment receipts, and female member data privacy controls.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <a href="/My_Gym_Download/" class="btn btn-outline-primary btn-sm w-100 fw-semibold">Explore MY GYM</a>
+            </div>
           </div>
-        </div>
+        </article>
+
+        <!-- My Voice -->
+        <article class="col-lg-4 col-md-6">
+          <div class="product-box p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="product-badge bg-info-subtle text-info border border-info-subtle">Speech & Audio</span>
+              <span class="text-muted small fw-semibold">Desktop Utility</span>
+            </div>
+            <h3 class="fw-bold fs-4 mb-2">My Voice</h3>
+            <p class="text-muted small flex-grow-1">
+              An intelligent speech and audio processing tool developed for seamless voice-to-text transcription, natural text-to-speech rendering, and audio accessibility workflows across workplace documents.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <a href="/My_Voice_Download/" class="btn btn-outline-primary btn-sm w-100 fw-semibold">Explore My Voice</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
-</section>
-<!------------------------------- Privacy Policy ------------------------------------------------------------------------>
-<section id="privacy" class="bg-light py-5 border-top">
-  <div class="container">
+  </section>
+
+  <!-- PRIVACY POLICY SECTION -->
+  <section id="privacy" class="container py-5">
     <div class="policy-content">
-      <h2 class="section-title text-center mb-4">Privacy Policy</h2>
-      <p class="text-muted">Last Updated: January 21, 2026</p>
+      <h2 class="section-title text-center mb-2">Privacy & Data Governance Policy</h2>
+      <p class="text-muted text-center mb-4 small">Effective & Last Updated: 2026</p>
 
-      <p>Your privacy is important to us. It is MHB Tech Solutions' policy to respect your privacy regarding any information we may collect from you across our website, mhbtechsolutions.in.</p>
+      <p>
+        Your privacy is paramount to our operations. This policy governs how MHB Tech Solutions handles, protects, and stores user and client data across <strong>mhbtechsolutions.in</strong> and related internal applications.
+      </p>
 
-      <h4>1. Information We Collect</h4>
-      <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. This information includes what you provide us via contact forms or career applications, such as your name, email address, and phone number.</p>
-
-      <h4>2. How We Use Information</h4>
-      <p>We use the information we collect strictly for the following internal purposes:</p>
+      <h3>1. Information We Collect</h3>
+      <p>
+        We collect only the information necessary to fulfill contractual obligations and provide technical services. Information gathered via project inquiry forms, demo requests, or career submissions includes:
+      </p>
       <ul>
-        <li>To provide and maintain our services.</li>
-        <li>To improve and personalize your experience on our website.</li>
-        <li>To analyze and understand how our website is used to develop new features.</li>
-        <li>To communicate with you directly regarding your inquiries or job applications.</li>
+        <li>Contact identification (Full Name, Business Name, Official Email Address, Phone Number).</li>
+        <li>System and application telemetry necessary for desktop application license validation and debugging (solely upon user consent).</li>
       </ul>
 
-      <h4>3. Data Storage and Security</h4>
-      <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use, or modification.</p>
+      <h3>2. Data Usage Principles</h3>
+      <p>Collected data is used strictly for internal operational workflows, including:</p>
+      <ul>
+        <li>Configuring and deploying bespoke client software and dedicated server environments.</li>
+        <li>Direct communication regarding technical deliverables, project milestones, and inquiries.</li>
+        <li>Aggregated performance analysis to optimize software latency and security profiles.</li>
+      </ul>
 
-      <h4>4. Internal Commitment</h4>
-      <p>We do not share any personally identifying information publicly or with third-party sites. Our focus remains entirely on using provided information to enhance our technical solutions and support our clients effectively.</p>
+      <h3>3. Data Storage, Security & Isolation</h3>
+      <p>
+        We implement industry-standard access controls, SSL/TLS encryption in transit, and restricted firewall policies on all host machines. Proprietary client databases are isolated, and sensitive customer records are never shared, sold, or distributed to third-party ad networks.
+      </p>
 
-      <h4>5. Your Rights</h4>
-      <p>You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.</p>
+      <h3>4. User Rights & Consent</h3>
+      <p>
+        Clients and users retain full rights to request verification, rectification, or complete deletion of their stored contact records at any time by contacting our engineering compliance desk.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
+<!-- FOOTER -->
 <footer class="text-center">
   <div class="container">
     <p class="mb-0">
@@ -186,5 +323,4 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
